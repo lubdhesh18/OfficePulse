@@ -266,7 +266,7 @@ If you build something inspired by OfficePulse, attribution is appreciated.
 
 This project is licensed under the MIT License.
 
-See the LICENSE file for details.
+See the [LICENSE](license) file for details.
 
 
 # Author
