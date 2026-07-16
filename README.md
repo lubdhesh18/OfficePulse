@@ -1,138 +1,136 @@
 # OfficePulse – Personal Work Companion
 
-![Version](https://img.shields.io/badge/version-1.0-blue.svg)
-![Status](https://img.shields.io/badge/status-Development-orange)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Made With](https://img.shields.io/badge/Made%20With-JavaScript-yellow)
+<p align="center">
+  <img src="docs/Images/logo.png" alt="OfficePulse Logo" width="120"/>
+</p>
 
-OfficePulse is a modern, lightweight, browser-based Personal Work Companion designed to help users efficiently manage office attendance, working hours, productivity insights, and daily work records.
+<p align="center">
+  <strong>A modern personal work companion for tracking attendance, working hours, and productivity through a beautiful calendar-first dashboard.</strong>
+</p>
 
-Unlike traditional attendance trackers, OfficePulse focuses on providing an intuitive calendar-first experience with interactive dashboards, productivity summaries, and insightful visual reports.
-
-The application runs entirely in the browser without requiring a backend server or database.
-
-
-## ✨ Project Vision
-
-OfficePulse aims to become an intelligent personal work companion that helps users:
-
-- Track office attendance
-- Monitor working hours
-- Review historical records
-- Visualize productivity trends
-- Improve work discipline
-- Maintain complete attendance history
-
-Version 1.0 is intentionally designed as an offline-first application powered by Browser Local Storage while maintaining an architecture ready for future cloud synchronization.
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-v1.0-blue" />
+  <img src="https://img.shields.io/badge/Status-In%20Development-orange" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+  <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JavaScript-yellow" />
+</p>
 
 
-# Features
+## 📖 About OfficePulse
 
-## Attendance Management
+OfficePulse is a lightweight, browser-based **Personal Work Companion** designed to help individuals manage their office attendance, working hours, and productivity from a single dashboard.
+
+Unlike traditional attendance systems, OfficePulse follows a **calendar-first workflow**, allowing users to manage daily attendance directly from an interactive calendar while receiving meaningful insights through a clean, zero-scroll dashboard.
+
+The application is built entirely with modern frontend technologies and stores data locally, making it fast, responsive, and easy to use without requiring a backend server.
+
+
+# ✨ Features
+
+### 📅 Smart Attendance Management
 
 - Calendar-first attendance tracking
 - Daily Check-In / Check-Out
-- Break duration management
-- Working hour calculation
-- Attendance editing
-- Attendance deletion
-- Notes for each workday
+- Break time management
+- Automatic working hour calculation
+- Edit existing attendance
+- Delete attendance records
+- Daily work notes
 
+### 📊 Dashboard
 
-## Dashboard
+- Today's Working Hours
+- Weekly Working Hours
+- Monthly Working Hours
+- Average Working Hours
+- Overtime Summary
 
-- Daily working hours
-- Weekly summaries
-- Monthly summaries
-- Average Check-In time
-- Average Check-Out time
-- Attendance percentage
-- Present / Absent statistics
+### 🗓 Interactive Calendar
 
-
-## Calendar
-
-- Interactive monthly calendar
+- Monthly Calendar View
+- Click any date to Create / View / Edit attendance
+- Color-coded attendance status
 - Weekend highlighting
-- Current date highlighting
-- Selected date highlighting
-- Attendance indicators
-- Month navigation
+- Public Holiday integration
+- Today's date indicator
 
+### 📈 Insights
 
-## Reports
+- Last 7 Days Summary
+- Weekly Summary
+- Activity Heatmap
+- Working Hour Statistics
 
-- Weekly reports
-- Monthly reports
-- Attendance distribution
-- Productivity charts
-- Working hour trends
+### 🌙 User Experience
 
+- Zero Scroll Dashboard
+- Responsive Design
+- Light / Dark Theme
+- Native Browser Notifications
+- Smooth Micro Animations
+- Modern Desktop-style Interface
 
-## User Experience
+# 🚀 Version 1.0 Highlights
 
-- Modern responsive interface
-- Smooth animations
-- Light & Dark theme
-- Toast notifications
-- Empty state guidance
-- User-friendly validation
+- Zero-scroll dashboard
+- Calendar-first workflow
+- Browser Local Storage
+- Public Holiday API integration
+- Browser Notification API
+- Web Animations API powered UI animations
+- Fully frontend architecture
 
-
-# Technology Stack
+# 🛠 Technology Stack
 
 | Technology | Purpose |
 |------------|---------|
-| HTML5 | Application Structure |
+| HTML5 | Structure |
 | CSS3 | Styling |
-| Bootstrap 5 | Responsive Layout |
+| Bootstrap 5 | Layout & Responsive UI |
 | JavaScript (ES6+) | Application Logic |
-| Local Storage API | Data Persistence |
-| Chart.js | Dashboard Charts |
+| Web Animations API | UI Animations |
+| Chart.js | Activity Graphs |
+| Browser Local Storage | Offline Data Storage |
+| Notification API | Browser Notifications |
+| Public Holiday API | Holiday Calendar |
 
+# 📂 Project Structure
 
-# Project Structure
-
-```
-OfficePulse/
-
+```text
+officepulse/
 │
-├── index.html
+├── README.md
+├── LICENSE
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
 │
-├── css/
-│   ├── style.css
-│   ├── variables.css
-│   ├── animations.css
-│   └── responsive.css
+├── docs/
+│   ├── SRS/
+│   ├── SDD/
+│   ├── UI/
+│   ├── Architecture/
+│   └── Images/
 │
-├── js/
-│   ├── app.js
-│   ├── storage.js
-│   ├── calculator.js
-│   ├── calendar.js
-│   ├── ui.js
-│   ├── charts.js
-│   └── utilities.js
+├── src/
+│   ├── index.html
+│   ├── css/
+│   ├── js/
+│   │   ├── api/
+│   │   └── utils/
+│   └── assets/
 │
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── fonts/
-│
-└── docs/
-    ├── OfficePulse_SRS_v1.0.pdf
-    └── OfficePulse_SDD_v1.0.pdf
+└── screenshots/
 ```
 
+# 🧩 Application Architecture
 
-# Application Architecture
-
-```
+```text
 User
 
 ↓
 
-UI
+Dashboard UI
 
 ↓
 
@@ -140,150 +138,158 @@ Application Controller (app.js)
 
 ↓
 
-Storage
-Calculator
+UI Components
 Calendar
-
-↓
-
+Calculator
+Storage
 Charts
+Notifications
 
 ↓
 
-Dashboard
+Local Storage
+Holiday API
 ```
 
-The application follows a modular architecture based on the Single Responsibility Principle (SRP), making it easy to maintain, test, and extend.
+The application follows a modular architecture where each JavaScript module has a single responsibility, making the project scalable and maintainable.
 
+# 🎨 UI Philosophy
 
-# Installation & Setup
+OfficePulse follows a modern **Desktop Productivity Dashboard** design philosophy.
 
-## Clone the Repository
+### Design Principles
+
+- Zero Scroll Layout
+- Calendar-first workflow
+- Minimal distractions
+- Soft color palette
+- Responsive design
+- Smooth micro interactions
+- Accessibility focused
+
+Animations are intentionally subtle to enhance usability rather than distract the user.
+
+# 📚 Documentation
+
+Complete project documentation is available inside the `docs/` directory.
+
+### Software Engineering Documents
+
+- Software Requirements Specification (SRS)
+- Software Design Document (SDD)
+
+These documents describe the complete project requirements, architecture, module design, implementation strategy, and future roadmap.
+
+# ⚙ Installation
+
+Clone the repository
 
 ```bash
 git clone https://github.com/lubdhesh18/OfficePulse.git
 ```
 
-## Navigate into the Project
+Navigate into the project
 
 ```bash
-cd OfficePulse
+cd officepulse
 ```
 
-## Open the Application
+Open the application
 
-Simply open
-
+```text
+src/index.html
 ```
-index.html
-```
-
-inside any modern browser.
 
 No installation required.
 
-No database required.
-
 No backend required.
 
+No database required.
 
-# Development Roadmap
+# 📌 Roadmap
 
-## Version 1.0
+### Version 1.0
 
-- Offline Attendance Tracking
+- Attendance Dashboard
 - Interactive Calendar
-- Dashboard
-- Reports
+- Activity Graph
+- Weekly Summary
+- Browser Notifications
+- Public Holiday Integration
 - Local Storage
-- Charts
 
+### Planned Future Enhancements
 
-## Future Versions
-
-- Cloud Synchronization
-- User Authentication
+- Reports
+- Analytics
+- Timesheets
 - Leave Management
-- Team Dashboard
-- Public Holiday Support
-- Export to PDF / Excel
-- Mobile Application
-- REST API Integration
+- Cloud Synchronization
+- Multi-user Support
+- Mobile Version
 
 
-# Documentation
-
-The project documentation is available inside the **docs/** directory.
-
-- Software Requirements Specification (SRS)
-- Software Design Document (SDD)
-
-These documents define the functional requirements, software architecture, module design, algorithms, and implementation strategy of OfficePulse.
-
-
-# Contributing
+# 🤝 Contributing
 
 Contributions are welcome.
 
-If you would like to contribute:
+To contribute:
 
 1. Fork the repository
-2. Create a new feature branch
+
+2. Create a feature branch
 
 ```bash
-git checkout -b feature/your-feature
+git checkout -b feature/feature-name
 ```
 
 3. Commit your changes
 
 ```bash
-git commit -m "Add your feature"
+git commit -m "Add feature"
 ```
 
-4. Push your branch
+4. Push to GitHub
 
 ```bash
-git push origin feature/your-feature
+git push origin feature/feature-name
 ```
 
 5. Open a Pull Request
 
-Please ensure that:
+Please ensure that your code follows the existing project structure and coding standards.
 
-- Code follows project structure
-- Existing functionality remains unaffected
-- New features include appropriate documentation
+# 🍴 Forking
 
-
-# Forking
-
-You are welcome to fork this repository for learning, experimentation, or personal use.
+You are welcome to fork this repository for learning, experimentation, or personal projects.
 
 If you build something inspired by OfficePulse, attribution is appreciated.
 
-
-# License
+# 📄 License
 
 This project is licensed under the MIT License.
 
-See the [LICENSE](license) file for details.
+See the [LICENSE](license) file for more information.
 
 
-# Author
+# 👨‍💻 Author
 
-**Lubdhesh18**
+**Lubdhesh Rathor**
 
-QA Engineer • DevOps Engineer
+Associate QA Engineer
 
-GitHub: https://github.com/lubdhesh18
+Building products with a focus on clean architecture, thoughtful user experience, and modern software engineering practices.
+
+# 🙏 Acknowledgements
+
+OfficePulse was designed using a documentation-first development approach. The project was planned through comprehensive Software Requirements Specification (SRS) and Software Design Document (SDD) before implementation began.
+
+The application emphasizes clean architecture, modular development, maintainability, and user-centered design.
 
 
-# Acknowledgements
+## ⭐ Support
 
-OfficePulse was designed following modern software engineering practices, including a comprehensive Software Requirement Specification (SRS) and Software Design Document (SDD) documentation before implementation.
+If you found this project useful, consider giving it a ⭐ on GitHub.
 
-The project emphasizes clean architecture, modular development, maintainability, and user-centered design.
-
-
-### ⭐ If you find this project useful, consider giving it a star!
+It helps others discover the project and motivates future improvements.
 
