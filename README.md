@@ -1,7 +1,7 @@
 # OfficePulse – Personal Work Companion
 
 <p align="center">
-  <img src="docs/Images/logo.png" alt="OfficePulse Logo" width="120"/>
+  <img src="docs/Images/logo.png" alt="OfficePulse Logo" width="300"/>
 </p>
 
 <p align="center">
