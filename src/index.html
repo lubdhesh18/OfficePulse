@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+     <!-- ==========================================================
+         Meta
+    =========================================================== -->
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>OfficePulse | Personal Work Companion</title>
+
+     <meta name="description"
+          content="OfficePulse - A modern personal work companion for attendance, work hour tracking and productivity.">
+
+     <meta name="author" content="Lubzy">
+
+     <!-- ==========================================================
+         Favicon
+    =========================================================== -->
+
+     <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
+
+     <!-- ==========================================================
+         Google Fonts
+    =========================================================== -->
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+     <!-- ==========================================================
+         Bootstrap
+    =========================================================== -->
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- Bootstrap Icons -->
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+     <!-- ==========================================================
+         CSS
+    =========================================================== -->
+
+     <link rel="stylesheet" href="css/variables.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/animations.css">
+     <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+     <!-- ==========================================================
+         Application Root
+    =========================================================== -->
+
+     <div id="app">
+
+          <!-- Sidebar -->
+
+          <aside id="sidebar">
+
+               <!-- Logo -->
+
+               <div class="sidebar-logo">
+
+                    <img src="assets/logo/officepulse-logo-icon.png" alt="OfficePulse Logo">
+
+               </div>
+
+               <!-- Navigation -->
+
+               <nav class="sidebar-nav">
+
+                    <button class="nav-item active">
+
+                         <i class="bi bi-grid-1x2-fill"></i>
+
+                         <span>Dashboard</span>
+
+                    </button>
+
+                    <button class="nav-item">
+
+                         <i class="bi bi-calendar3"></i>
+
+                         <span>Calendar</span>
+
+                    </button>
+
+                    <button class="nav-item">
+
+                         <i class="bi bi-file-earmark-bar-graph"></i>
+
+                         <span>Reports</span>
+
+                    </button>
+
+                    <button class="nav-item">
+
+                         <i class="bi bi-graph-up-arrow"></i>
+
+                         <span>Analytics</span>
+
+                    </button>
+
+                    <button class="nav-item">
+
+                         <i class="bi bi-clock-history"></i>
+
+                         <span>Timesheet</span>
+
+                    </button>
+
+               </nav>
+
+          </aside>
+
+
+
+          <!-- Main Content -->
+
+          <main id="main-content">
+
+               <!-- ==========================================================
+         Header
+     =========================================================== -->
+
+               <header id="header">
+
+                    <!-- Brand -->
+
+                    <div class="header-left">
+
+                         <div class="brand">
+
+                              <h1 class="app-title">
+                                   OfficePulse
+                              </h1>
+
+                              <p class="app-subtitle">
+                                   Personal Work Companion
+                              </p>
+
+                         </div>
+
+                    </div>
+
+                    <!-- Header Actions -->
+
+                    <div class="header-right">
+
+                         <div class="current-time">
+
+                              <span id="current-day">
+                                   Monday
+                              </span>
+
+                              <span class="dot"></span>
+
+                              <span id="current-clock">
+                                   10:30 AM
+                              </span>
+
+                         </div>
+
+                         <button class="theme-toggle" aria-label="Toggle Theme">
+
+                              <i class="bi bi-moon-stars"></i>
+
+                         </button>
+
+                         <button class="profile-btn" aria-label="Profile">
+
+                              LR
+
+                         </button>
+
+                    </div>
+
+               </header>
+
+               <!-- ==========================================================
+         Workspace
+     =========================================================== -->
+
+               <section id="workspace">
+
+                    <!-- Dashboard View -->
+
+                    <section id="dashboard-view">
+
+                         <!-- KPI Cards -->
+
+                         <section id="dashboard-cards"></section>
+
+                         <!-- Main Dashboard Area -->
+
+                         <section id="dashboard-content">
+
+                              <section id="calendar-panel"></section>
+
+                              <section id="last-seven-days"></section>
+
+                              <section id="activity-panel"></section>
+
+                         </section>
+
+                         <!-- Bottom Section -->
+
+                         <section id="dashboard-bottom">
+
+                              <section id="weekly-summary"></section>
+
+                         </section>
+
+                    </section>
+
+               </section>
+
+          </main>
+
+
+     </div>
+
+     <!-- ==========================================================
+         Popup Container
+     =========================================================== -->
+
+     <div id="modal-root"></div>
+
+     <!-- ==========================================================
+         Toast Container
+     =========================================================== -->
+
+     <div id="toast-root"></div>
+
+     <!-- ==========================================================
+         Bootstrap JS
+     =========================================================== -->
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+     <!-- ==========================================================
+         Chart.js
+     =========================================================== -->
+
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+     <!-- ==========================================================
+         Utilities
+     =========================================================== -->
+
+     <script src="js/utils/constants.js"></script>
+     <script src="js/utils/helpers.js"></script>
+     <script src="js/utils/validators.js"></script>
+
+     <!-- ==========================================================
+         Core Modules
+     =========================================================== -->
+
+     <script src="js/storage.js"></script>
+     <script src="js/calculator.js"></script>
+     <script src="js/calendar.js"></script>
+     <script src="js/charts.js"></script>
+     <script src="js/notifications.js"></script>
+     <script src="js/animations.js"></script>
+
+     <!-- ==========================================================
+         API Modules
+     =========================================================== -->
+
+     <script src="js/api/holidays.js"></script>
+
+     <!-- ==========================================================
+         UI
+     =========================================================== -->
+
+     <script src="js/ui.js"></script>
+
+     <!-- ==========================================================
+         Application Entry Point
+     =========================================================== -->
+
+     <script src="js/app.js"></script>
+
+</body>
+
+</html>

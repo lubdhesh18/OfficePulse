@@ -1,0 +1,112 @@
+/* ==========================================================
+   OfficePulse Design System
+   Version : 1.0
+   ========================================================== */
+
+/* ==========================================================
+   Color Palette
+   ========================================================== */
+
+:root {
+
+    /* Brand Colors */
+
+    --primary: #6366F1;
+    --primary-light: #818CF8;
+    --primary-dark: #4F46E5;
+
+    /* Background */
+
+    --background: #F7F8FC;
+    --surface: #FFFFFF;
+    --surface-secondary: #F1F5F9;
+
+    /* Text */
+
+    --text-primary: #1E293B;
+    --text-secondary: #64748B;
+    --text-muted: #94A3B8;
+
+    /* Border */
+
+    --border: #E2E8F0;
+
+    /* Status */
+
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+    --info: #3B82F6;
+
+    /* Calendar */
+
+    --calendar-present: #DCFCE7;
+    --calendar-weekend: #EDE9FE;
+    --calendar-holiday: #F3E8FF;
+    --calendar-leave: #FEE2E2;
+    --calendar-empty: #FFFFFF;
+
+    /* Shadows */
+
+    --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
+    --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+    --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.12);
+
+    /* Border Radius */
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+    --radius-pill: 999px;
+
+    /* Typography */
+
+    --font-family: "Poppins", sans-serif;
+
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-md: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 1.5rem;
+    --font-2xl: 2rem;
+
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    /* Spacing */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+
+    /* Sidebar */
+
+    --sidebar-width: 80px;
+    --sidebar-hover-width: 220px;
+
+    /* Header */
+
+    --header-height: 72px;
+
+    /* Animation */
+
+    --transition-fast: 150ms;
+    --transition-normal: 250ms;
+    --transition-slow: 350ms;
+
+    --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Layering */
+
+    --z-sidebar: 100;
+    --z-header: 200;
+    --z-popup: 500;
+    --z-toast: 1000;
+}
